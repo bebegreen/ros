@@ -1,0 +1,30 @@
+body { 
+  margin: 0; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+* { 
+  box-sizing: border-box; 
+  // margin: 0; 
+}
+.ng-enter{ 
+  animation: fadein 0.5s; 
+  z-index: 10; 
+}
+.ng-leave{ 
+  animation: fadeout 0.5s; 
+  z-index: 20; 
+}
+
+
+@keyframes fadein { 
+ 
+    from    { opacity: 0  }
+    to { opacity: 1}
+}
+
+@keyframes fadeout { 
+  
+     from    { opacity: 1  }
+     to { opacity: 0}
+ }

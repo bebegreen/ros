@@ -1,0 +1,43 @@
+#homepage { 
+  background: url('/public/assets/images/samuel-foster-412328-min.jpg') no-repeat; 
+  background-size: cover; 
+  background-position: 50% 50%; 
+  height: 100vh; 
+  color: white; 
+  position: relative;
+  nav { 
+    background: #392a2a; 
+    ul{
+      margin: 0; 
+      padding: 0 1em;  
+      display: flex; 
+      list-style: none; 
+      align-items: center; 
+      li{ 
+        padding: 1em; 
+      }
+      :first-child{ 
+        font-size: x-large; 
+      }
+    }
+  }
+  a { 
+    text-align: center;  
+    position: absolute;
+    margin: 100px auto; 
+    left: 0;
+    right: 0;
+    width: 150px; 
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background: orange;
+    padding: 1em;
+    text-decoration: none; 
+    transition: all 0.5s; 
+    font-weight: 900; 
+    &:hover { 
+      background: rgb(167, 108, 6); 
+      color: white; 
+    }
+  }
+}

@@ -1,0 +1,29 @@
+item-list { 
+  input { 
+    padding: 13px 1em; 
+    border-radius: 45px;
+    width: 100%;  
+    border: 1px solid lightgray; 
+    background: url('http://www.amboda.com/wp-content/uploads/2017/07/food-1.png') no-repeat white;
+    background-size: 37px 37px;
+    background-position: 94% 50%;
+    margin-bottom: 1em; 
+    font-size: 20px; 
+    &:focus { 
+      outline: none; 
+    }
+  }
+  ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+
+  h3 { 
+    margin-top: 0; 
+  }
+  h4 { 
+    padding-left: 1em; 
+    margin: 0; 
+  }
+}

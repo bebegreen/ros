@@ -1,0 +1,39 @@
+<div id='edit-item'>
+  <form ng-click='$ctrl.handleClick($event)'>
+    <h3>Item id: #{{ $ctrl.item.id }}</h3>
+     
+    <input type="text" ng-model="$ctrl.item.name">
+    <label>
+      In Stock:
+      <input type="checkbox" ng-model="$ctrl.item.in_stock">
+    </label>
+    <label>
+      Open:
+      <input type="checkbox" ng-model="$ctrl.item.open">
+    </label>
+    <label>
+      Price
+      <input type="number" ng-model="$ctrl.item.price">
+    </label>
+    
+    <h3>Modifiers: <span>drag to add / remove</span></h3>
+    <div id='modifiers'>
+      <h4>current</h4>
+      <h4>optional</h4>
+      <drop-zone
+        ng-repeat="modifier in $ctrl.modifiers" 
+        data='modifier' 
+        handle-click='$ctrl.showOptions(itemId)'
+      />
+    </div>
+
+    <p class='modifiers'>
+      <span ng-repeat='option in $ctrl.modifierOptions'>
+        {{ option.name }}{{ $last ? '' : ' / ' }}
+      </span>
+    </p>
+
+    <div class='button' ng-click="$ctrl.handleSave()">Save</div>
+
+  </form>
+</div>

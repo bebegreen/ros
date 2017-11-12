@@ -1,0 +1,41 @@
+dashboard { 
+  color: #4f4e4e; 
+  h1 { 
+    background: #383b5f; 
+    color: white; 
+    margin: 0; 
+    padding: 16px; 
+  }
+}
+#dashboard { 
+  display: flex;
+  position: relative; 
+  background: #f0f0f0; 
+  padding: 1em;  
+  .item { 
+    padding: 1em; 
+  }
+  item-list { 
+    flex-basis: 30%; 
+  }
+  printing-priority { 
+    flex-grow: 1; 
+    position: sticky; 
+  }
+  ul{ 
+    // background: url('http://www.amboda.com/wp-content/uploads/2017/07/food-1.png') no-repeat white;
+    border: 3px dotted transparent; 
+    transition: all 0.5s; 
+    padding: 1em; 
+    list-style: none; 
+  }
+  .dndDragover { 
+    background: #dfdfdf; 
+    border: 3px dotted white; 
+    background: rgba(0,0,0,0.2); 
+  }
+  .dndDragging{ 
+    background: gray; 
+  }
+
+}
