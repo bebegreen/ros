@@ -1,12 +1,12 @@
 {
   "name": "pokemon-poc",
   "version": "1.0.0",
-  "description": "Pokemon POC with Angular 1.X, ES6 and webpack",
+  "description": "angularjs restaurant menu app",
   "main": "./src/components/app/app.module.js",
   "scripts": {
     "start": "concurrently 'lite-server puplic/index.html' 'webpack --watch'"
   },
-  "author": "zamarrowski",
+  "author": "binyamin",
   "license": "ISC",
   "dependencies": {
     "@uirouter/angularjs": "^1.0.10",
